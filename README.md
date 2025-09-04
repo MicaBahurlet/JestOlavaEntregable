@@ -33,11 +33,11 @@ El controlador `app.controller.ts` alcanza **100% de cobertura** en todas las m�
 - **ESLint** - Linter de código
 - **Prettier** - Formateador de código
 
-## 📚 Documentación Adicional
+## 📚 Documentación Solicitada
 
-Para más detalles sobre la implementación y explicaciones técnicas, consulta:
+Documento solicitado como parte de la consigna:
 
-📄 **[Documentación Completa en Google Drive](https://docs.google.com/document/d/1hBmQ1Vkh1ut_19zyAFIxFc4Ym5nQsyP1iM-Tk_uyhv4/edit?usp=sharing)**
+📄 **[Documentación en Google Drive](https://docs.google.com/document/d/1hBmQ1Vkh1ut_19zyAFIxFc4Ym5nQsyP1iM-Tk_uyhv4/edit?usp=sharing)**
 
 
 
@@ -62,11 +62,4 @@ Para más detalles sobre la implementación y explicaciones técnicas, consulta:
    ```bash
    npm run start:dev
    ```
-
-## 👩‍💻 Autora
-
-**Micaela Bahurlet**
-- Implementación completa de tests
-- Documentación en español
-- 100% de cobertura alcanzada
 
