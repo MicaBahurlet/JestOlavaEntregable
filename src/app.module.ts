@@ -11,13 +11,17 @@ import { AppService } from './app.service';
       type: 'mysql',
       host: 'localhost',
       port: 3306,
-      username: 'root',
-      password: 'admin',
-      database: 'notebooks',
-      entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true, 
+      username: 'jest_user',
+      password: 'jest_pass',
+      database: 'jest_tp',
+      autoLoadEntities: true, //para las entidades import
+      synchronize: true,  //para las tablas en la db vacia 
+      // entities: [__dirname + '/**/*.entity{.ts,.js}'],
+
+  
     }),
     NotebooksModule,
+
   ],
   controllers: [AppController],
   providers: [AppService],

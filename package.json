@@ -17,7 +17,14 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "test:unit": "jest --testPathPattern=app.controller.spec.ts",
+    "test:integration": "jest --testPathPattern=app.controller.integration.spec.ts",
+    "test:controller": "jest --testPathPattern=\"app.controller\"",
+    "test:cov:unit": "jest --coverage --testPathPattern=app.controller.spec.ts",
+    "test:cov:integration": "jest --coverage --testPathPattern=app.controller.integration.spec.ts",
+    "test:cov:controller": "jest --coverage --testPathPattern=\"app.controller\"",
+    "test:all": "npm run test:controller && npm run test:e2e"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
@@ -27,7 +34,7 @@
     "@nestjs/typeorm": "^11.0.0",
     "class-transform": "^0.7.0",
     "class-validator": "^0.14.2",
-    "mysql2": "^3.14.3",
+    "mysql2": "^3.14.4",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.26"
